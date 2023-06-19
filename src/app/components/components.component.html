@@ -1,0 +1,13 @@
+<div class="py-4 px-6 border rounded flex items-center flex-col mb-2">
+    <img [src]="product.image" [alt]="product.title" class="w-1/6 mb-2" (click)="details = !details">
+    <h2 class="mb-2 text-md text-center">{{ product.title }}</h2>
+    <p>Price: <span class="font-bold">{{ product.price}}</span></p>
+    <button class="border-separate py-1 px-2 bg-red-700"
+
+    (click)="details = !details">
+    {{details ? "Закрыть доп. инф." : "Показать доп. инф."}}</button>
+    <button [routerLink]="['']" nz-button nzType="primary" nzShape="round"></button>
+<div *ngIf="details">
+    <p>{{ product.description }}</p>
+</div>
+    </div>
