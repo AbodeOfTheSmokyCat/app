@@ -10,11 +10,11 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductComponent } from './table/ProductComponent';
+import { ProductComponent } from './list/ProductComponent';
 import { NzTableModule } from 'ng-zorro-antd/table'; 
 import { NzPaginationModule } from 'ng-zorro-antd/pagination'; 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
-import { ComponentsComponent } from './components/components.component';
+import { ComponentsComponent } from './about/about.component';
 registerLocaleData(en);
 
 

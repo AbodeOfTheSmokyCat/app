@@ -5,8 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../data/products';
 @Component({
   selector: 'app-products',
-  templateUrl: './components.component.html',
-  styleUrls: ['./components.component.css']
+  templateUrl: './about.component.html',
 })
 export class ComponentsComponent {
   

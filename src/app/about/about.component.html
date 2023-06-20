@@ -6,8 +6,10 @@
 
     (click)="details = !details">
     {{details ? "Закрыть доп. инф." : "Показать доп. инф."}}</button>
-    <button [routerLink]="['']" nz-button nzType="primary" nzShape="round"></button>
+
 <div *ngIf="details">
     <p>{{ product.description }}</p>
 </div>
+<br>
+<button class="border-separate py-1 px-2 bg-blue-700"[routerLink]="['']" nz-button nzType="primary" nzShape="round">Перейти к списку</button>
     </div>
